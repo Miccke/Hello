@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://120.79.224.104:3306/weChattest?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: mysqldb2017
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.example.hello.entity  # 注意：对应实体类的路径
+  configuration:
+    map-underscore-to-camel-case: true #驼峰映射
